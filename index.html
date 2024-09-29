@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Monster Hunter World Crown Checklist</title>
+</head>
+<body class="dark">
+    <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark">
+        <div class="navbar-brand">Monster Hunter World Crown Checklist</div>
+    </nav>
+    <div class="container" id="maincontainer">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="row">
+                    <div class="col-xl-10 col-md-12" style="position: relative;">
+                        <label for="JumbotronChk" id="JumbotronChkLabel"></label>
+                        <input type="checkbox" id="JumbotronChk" />
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container" id="jumbotronContent">
+                                <h5>
+                                    This is a simple checklist to make it easier to keep track of your progress for giant and miniature crowns.
+                                    <br /><small>This checklist also includes monsters not necessary for the achievements, but I just included them anyway.</small>
+                                </h5>
+                                <div id="SupportedStorage">
+                                    <h6><small class="text-muted"><em>Your progress is saved locally on the device you're using. When you return you'll be able to pick up where you left off (unless you're browsing incognito, then everything will be wiped at the end of your session). <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API#Private_Browsing_Incognito_modes">More info about 'localStorage' and incognito here.</a></em></small></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" id="base-game-card">
+                            <a class="card-toggler-href collapsed" data-toggle="collapse" data-parent="#base-game-card" href="#base-game-body" aria-expanded="false" aria-controls="base-game-body">
+                                <div class="card-header">Base Game Monsters</div>
+                            </a>
+                            <div class="card-body collapse table-responsive" id="base-game-body">
+                                <table id="base_game_table" class="monsters_table table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th colspan="1">Giant Crown</th>
+                                            <th colspan="1">Miniature Crown</th>                                                                                      
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card" id="iceborne-card">
+                            <a class="card-toggler-href collapsed" data-toggle="collapse" data-parent="#iceborne-card" href="#iceborne-body" aria-expanded="false" aria-controls="iceborne-body">
+                                <div class="card-header">Iceborne Monsters</div>
+                            </a>
+                            <div class="card-body collapse table-responsive" id="iceborne-body">
+                                <table id="iceborne_table" class="monsters_table table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th colspan="1">Giant Crown</th>
+                                            <th colspan="1">Miniature Crown</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header">Grand total remaining</div>
+                            <div class="card-body" id="GrandTotalDiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

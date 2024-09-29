@@ -1,0 +1,304 @@
+{
+    "Monsters": [
+        {
+            "ID": "1",
+            "Name": "Great Jagras",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "2",
+            "Name": "Kula-Ya-Ku",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "3",
+            "Name": "Pukei-Pukei",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "4",
+            "Name": "Jyuratodus",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "5",
+            "Name": "Barroth",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "6",
+            "Name": "Tobi-Kadachi",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "7",
+            "Name": "Anjanath",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "8",
+            "Name": "Rathian",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "9",
+            "Name": "Tzitzi-Ya-Ku",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "10",
+            "Name": "Paolumu",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "11",
+            "Name": "Great Girros",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "12",
+            "Name": "Radobaan",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "13",
+            "Name": "Legiana",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "14",
+            "Name": "Odogaron",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "15",
+            "Name": "Ratathalos",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "16",
+            "Name": "Diablos",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "17",
+            "Name": "Dodogama",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "18",
+            "Name": "Lavasioth",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "19",
+            "Name": "Uragaan",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "20",
+            "Name": "Azure Rathalos",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "21",
+            "Name": "Bazelgeuse",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "22",
+            "Name": "Black Diablos",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "23",
+            "Name": "Kirin",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "24",
+            "Name": "Nergigante",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "25",
+            "Name": "Teostra",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "26",
+            "Name": "Kushala Daora",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "27",
+            "Name": "Deviljho",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "28",
+            "Name": "Pink Rathian",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "29",
+            "Name": "Vaal Hazak",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "30",
+            "Name": "Lunastra",
+            "Type": "Base Game"
+        },
+        {
+            "ID": "31",
+            "Name": "Beotodus",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "32",
+            "Name": "Banbaro",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "33",
+            "Name": "Viper Tobi-Kadachi",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "34",
+            "Name": "Nightshade Paolumu",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "35",
+            "Name": "Coral Pukei-Pukei",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "36",
+            "Name": "Barioth",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "37",
+            "Name": "Nargacuga",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "38",
+            "Name": "Glavenus",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "39",
+            "Name": "Tigrex",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "40",
+            "Name": "Brachydios",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "41",
+            "Name": "Shrieking Legiana",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "42",
+            "Name": "Fulgur Anjanath",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "43",
+            "Name": "Acidic Glavenus",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "44",
+            "Name": "Ebony Odogaron",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "45",
+            "Name": "Velkhana",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "46",
+            "Name": "Seething Bazelgeuse",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "47",
+            "Name": "Blackveil Vaal Hazak",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "48",
+            "Name": "Namielle",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "49",
+            "Name": "Savage Deviljho",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "50",
+            "Name": "Ruiner Nergigante",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "51",
+            "Name": "Zinogre",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "52",
+            "Name": "Yian Garuga",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "53",
+            "Name": "Scarred Yian Garuga",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "54",
+            "Name": "Brute Tigrex",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "55",
+            "Name": "Silver Rathalos",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "56",
+            "Name": "Gold Rathian",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "57",
+            "Name": "Rajang",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "58",
+            "Name": "Stygian Zinogre",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "59",
+            "Name": "Furious Rajang",
+            "Type": "Iceborne"
+        },
+        {
+            "ID": "60",
+            "Name": "Frostfang Barioth",
+            "Type": "Iceborne"
+        }
+    ]
+}
