@@ -27,5 +27,5 @@ The script dynamically distributes monsters into their respective tables based o
 ### Local Storage for Progress Tracking:
 I implemented event listeners for the checkboxes to detect changes when they are checked or unchecked. Whenever a change occurs, the updated state is saved to the browser's local storage. This means that your crown progress is saved on your device, and you can freely return to the checklist at any time to view or update your progress. This feature is essential for long-term tasks like obtaining crowns in Monster Hunter World, where the process can take a significant amount of time.
 
-#### Conclusion
+# Conclusion
 With this interactive checklist, keeping track of your progress in obtaining monster crowns in Monster Hunter World is now easier and more efficient. The checklist is designed to save your progress, allowing you to check it at your convenience without worrying about losing your data. Whether you're focusing on the base game or Iceborne, this tool is a great companion for anyone striving to complete their crown collection.
