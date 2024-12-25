@@ -1,26 +1,31 @@
 # MHW Crown Checklist
-#### Video Demo:  https://youtu.be/EeqIFj-xa3M
-#### Description:
-I created a monster hunter world crown checklist to make it easier to keep track of crowns obtained in the game. Usually, checking for the progress in game is a big hassle, and it is much easier to be able to refer to something externally. I searched the internet for any monster hunter world crown checklists, but none had an interactive checklist. They were all either spreadsheet lists where you had to make DIY checks on your own with an arts tool, or just a standard list to eyeball. No list gave me the ability to manually check and save my progress. Thus, I created this checklist website to create a solution to resolve this issue. 
+#### Video Demo: https://youtu.be/EeqIFj-xa3M
 
+#### Overview:
+I created the Monster Hunter World Crown Checklist to help players easily track their progress in obtaining crowns for monsters in the game. Tracking crowns within the game itself can be cumbersome, so I developed this external checklist to provide a more convenient way to monitor your progress. During my search, I found no interactive checklists available—only static spreadsheets or simple lists that required manual updates. To solve this, I built an interactive checklist website where users can check and save their crown progress.
+
+# Features
 ## index.html
-The website has 2 checklists, one for the base game monsters and iceborne monsters. I separated the two to make it neater, rather than a long list of monsters. Additionally, not everyone has the iceborne dlc so people who do not can easily ignore iceborne and focus on the base game. I added collapsible tables for base game and iceborne to allow users to hide which table they didn't need, making it neater and less cramped for reading. I added columns for the monsters' name, type (base or iceborne), giant and miniature crown.
+The website offers two distinct checklists: one for base game monsters and one for Iceborne monsters. I separated these two to avoid creating an overwhelming list and to ensure that players without the Iceborne DLC can focus solely on the base game. To keep the layout clean, I implemented collapsible tables for both the base game and Iceborne checklists, allowing users to hide sections they don’t need. Each monster's name, type (Base or Iceborne), and crown categories (giant and miniature) are displayed, with checkboxes for tracking your progress.
 
-Each checklist has checkboxes under giant and miniature crowns. You check the boxes according to what crowns you have, leave them unchecked if you don't. The check boxes will stay checked as their status is saved to local storage. I did this because the checklist website will eventually be closed, and it will waste the user's time to have to recheck the previously checked boxes. Saving the progress allows the user to freely leave and come back to update existing progress when he or she wishes. 
-
+## Checkboxes
+Under each monster, you’ll find checkboxes for the Giant and Miniature crowns. You can check the boxes based on the crowns you've obtained in-game. The checklist remembers your selections via local storage, meaning your progress is saved even after refreshing the page or closing the browser. This ensures that users don’t have to manually re-check their progress, making it easier to pick up where they left off.
 monsters.json
-I made it such that the script calls a json file "monsters.json" which includes the monster ID, name and type, rather than pasting it in the index.html. It includes all the monsters from base game and iceborne. This improves readability of the index code and also allows me to isolate the json data and edit it accordingly if necessary. I used the monster type to allocate base game and iceborne monsters to their respective tables, instead of making two separate json files.
+Instead of embedding all monster data directly into the HTML, I store it in a separate "monsters.json" file. This approach makes the code more organized and easier to manage. The JSON file contains all monsters from both the base game and Iceborne, and their type (Base Game or Iceborne) is used to automatically allocate them to the appropriate table. This allows for easy updates to the checklist by simply modifying the JSON file without having to edit the HTML itself.
 
 ## script.js
 
-### error message
-I added an error message stating 'Something went wrong loading the monsters data, try reloading the page.' in the case calling monsters.json was not successful. I had a bit of an issue trying to call the json file when I was running the website on google chrome from VS code. Turns out Google Chrome has a function that blocks json files if you are running the website on a local server. I eventually found a workaround for this, but the error message was useful in telling me what the problem was when monsters data failed to show up on the respective tables.
+### Error Handling:
+I’ve added an error message that will display if the monster data fails to load. This can happen if there are issues with accessing the JSON file, particularly when running the website on a local server in Google Chrome. The error message helps users troubleshoot by indicating that the problem lies with loading the monster data.
 
-### checkboxes
-For the checkboxes, I used the monster ID to give each checkbox its own individual ID. Initially, I had not incorporated monster IDs in the code, which made all checkboxes in each column the same, resulting in checking box leading to checking of all boxes in the column. Adding monster IDs and in turn the checkbox IDs fixed this issue and allowed each checkbox to be checked on its own. As such, the user is able to check any box according to what crown he has obtained in the game without worrying about the checkboxes interferring with each other. 
+### Unique Checkbox IDs:
+Initially, I had an issue where all checkboxes in each column were treated as the same, causing them to interact with one another. By incorporating unique IDs for each checkbox based on the monster’s ID, I fixed this problem, ensuring that each checkbox operates independently. Now, users can check or uncheck the boxes for each monster without interference from others.
 
-### distributing the data
-I created baseGameTableBody and iceborneTableBody to allow the script to sort the monsters in monsters.json to their respective tables in index.html, based on their type 'Base Game' or 'Iceborne'. This works hand in hand with index.html, and I can easily add more monsters to the monsters.json file and classify it with the type, without needing to organise the monsters.json file. The script will distribute it automatically.
+### Automatic Sorting:
+The script dynamically distributes monsters into their respective tables based on their type (Base Game or Iceborne), using the type field from the JSON file. This allows me to easily add new monsters to the checklist by simply updating the JSON data without needing to modify the HTML structure.
 
-### local storage
-I added change event listeners to check if the checkboxes for giant or miniature crowns are checked or unchecked. If there is a change, local storage is updating with the new state : checked or unchecked. This allows the user to make changes that save, even after refreshing the page or closing and reopening the page. This is the core feature of the checklist, which is useful for a long term task such as obtaining crowns in the game, which usually takes a long time. This local storage is saved to your own device, so each individual user is able to have their own personal checklist to keep track of their data.
+### Local Storage for Progress Tracking:
+I implemented event listeners for the checkboxes to detect changes when they are checked or unchecked. Whenever a change occurs, the updated state is saved to the browser's local storage. This means that your crown progress is saved on your device, and you can freely return to the checklist at any time to view or update your progress. This feature is essential for long-term tasks like obtaining crowns in Monster Hunter World, where the process can take a significant amount of time.
+
+#### Conclusion
+With this interactive checklist, keeping track of your progress in obtaining monster crowns in Monster Hunter World is now easier and more efficient. The checklist is designed to save your progress, allowing you to check it at your convenience without worrying about losing your data. Whether you're focusing on the base game or Iceborne, this tool is a great companion for anyone striving to complete their crown collection.
