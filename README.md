@@ -1,9 +1,9 @@
 # MHW Crown Checklist
 
-#### Overview:
+## Overview:
 Monster Hunter World Crown Checklist to help players easily track their crown progress
 
-## About
+## Description
 The website offers two distinct checklists: one for base game monsters and one for Iceborne monsters. To keep the layout clean, I implemented collapsible tables for both the base game and Iceborne checklists, allowing you to hide sections you are done with or don’t need. Each monster's name, type (Base or Iceborne), and crown categories (giant and miniature) are displayed, with checkboxes for tracking your progress.
 
 ## Local Storage
